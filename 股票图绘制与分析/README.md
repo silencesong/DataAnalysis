@@ -24,8 +24,7 @@
 
 ### 结果
 
-![]
-(https://github.com/silencesong/DataAnalysis/blob/master/%E8%82%A1%E7%A5%A8%E5%9B%BE%E7%BB%98%E5%88%B6%E4%B8%8E%E5%88%86%E6%9E%90/images/%E4%BA%94%E6%97%A5%E7%A7%BB%E5%8A%A8%E5%9D%87%E7%BA%BF.png)
+![](https://github.com/silencesong/DataAnalysis/blob/master/%E8%82%A1%E7%A5%A8%E5%9B%BE%E7%BB%98%E5%88%B6%E4%B8%8E%E5%88%86%E6%9E%90/images/%E4%BA%94%E6%97%A5%E7%A7%BB%E5%8A%A8%E5%9D%87%E7%BA%BF.png)
 
 卷积运算可以简单的实现对一组数据实现降噪，本案例的卷积核取得比较简单，实际应用中需按照行业规定的标准进行取值
 
