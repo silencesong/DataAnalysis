@@ -11,7 +11,8 @@
 
 ### 结果
 
-![](images\蜡烛图&k线图.png)
+![](https://github.com/silencesong/DataAnalysis/blob/master/%E8%82%A1%E7%A5%A8%E5%9B%BE%E7%BB%98%E5%88%B6%E4%B8%8E%E5%88%86%E6%9E%90/images/%E8%9C%A1%E7%83%9B%E5%9B%BE%26k%E7%BA%BF%E5%9B%BE.png)
+
 
 
 
