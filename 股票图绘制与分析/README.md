@@ -11,7 +11,7 @@
 
 ### 结果
 
-![](C:\Users\tarena\Desktop\蜡烛图&k线图.png)
+![](images\蜡烛图&k线图.png)
 
 
 
