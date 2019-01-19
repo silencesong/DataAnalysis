@@ -13,6 +13,19 @@
 
 ![](https://github.com/silencesong/DataAnalysis/blob/master/%E8%82%A1%E7%A5%A8%E5%9B%BE%E7%BB%98%E5%88%B6%E4%B8%8E%E5%88%86%E6%9E%90/images/%E8%9C%A1%E7%83%9B%E5%9B%BE%26k%E7%BA%BF%E5%9B%BE.png)
 
+## 02.绘制某只股票的收盘价五日移动均线和十日移动均线
 
+### 步骤
 
+1. 整理收盘价五日均线的数据并且绘制五日移动均线(SMA-5-1)
+2. 使用卷积算法绘制五日移动均线(SMA-5-2)，得到和SMA-5-1重叠的线
+3. 使用卷积绘制十日均线(SMA-10)
+4. 使用加权卷积绘制五日均线(SMA-5)
+
+### 结果
+
+![]
+(https://github.com/silencesong/DataAnalysis/blob/master/%E8%82%A1%E7%A5%A8%E5%9B%BE%E7%BB%98%E5%88%B6%E4%B8%8E%E5%88%86%E6%9E%90/images/%E4%BA%94%E6%97%A5%E7%A7%BB%E5%8A%A8%E5%9D%87%E7%BA%BF.png)
+
+卷积运算可以简单的实现对一组数据实现降噪，本案例的卷积核取得比较简单，实际应用中需按照行业规定的标准进行取值
 
