@@ -1,5 +1,5 @@
 '''
-绘制五日均线
+绘制布林带
 '''
 import numpy as np
 import matplotlib.pyplot as mp
@@ -31,7 +31,6 @@ mp.xlabel('Date',fontsize=14)
 mp.ylabel('Price',fontsize=14)
 mp.tick_params(labelsize=10)
 mp.grid(linestyle=":")
-
 #设置刻度定位器,x轴需要显示时间信息
 ax=mp.gca()
 #x轴主刻度为每周一，次刻度为每天
@@ -40,24 +39,7 @@ ax.xaxis.set_major_formatter(md.DateFormatter('%Y %m %d'))
 ax.xaxis.set_minor_locator(md.DayLocator())
 #把日期数组类型改为md可识别类型
 dates=dates.astype(md.datetime.datetime)
-
 mp.plot(dates,closing_prices,color="dodgerblue",linewidth=3,linestyle=':',label='closing_price',alpha=0.5)
-
-#整理五日均线的数据并且绘制五日移动均线
-sma5=np.zeros(closing_prices.size-4)
-for i in range(sma5.size):
-    sma5[i]=closing_prices[i:i+5].mean()
-mp.plot(dates[4:],sma5,color="orangered",linewidth=2,label="SMA-5-1")
-
-#使用卷积绘制五日均线
-core=np.ones(5)/5
-sma52=np.convolve(closing_prices,core,'valid')
-mp.plot(dates[4:],sma52,color="red",linewidth=5,label="SMA-5-2",alpha=0.4)
-
-#使用卷积绘制十日均线
-core=np.ones(10)/10
-sma10=np.convolve(closing_prices,core,'valid')
-mp.plot(dates[9:],sma10,color="limegreen",linewidth=5,label="SMA-10",alpha=0.8)
 
 #使用加权卷积绘制五日均线
 weights=np.exp(np.linspace(-1,0,5))
@@ -65,6 +47,17 @@ core=weights/weights.sum()
 # print(core)
 sma53=np.convolve(closing_prices,core,'valid')
 mp.plot(dates[4:],sma53,color="violet",linewidth=2,label="SMA-5-3",alpha=0.8)
+
+#绘制五日均线的布林带
+stds=np.zeros(sma53.size)
+for i in range(stds.size):
+    stds[i]=closing_prices[i:i+5].std()
+#底部支撑线和顶部压力线
+lowers=sma53-2*stds
+uppers=sma53+2*stds
+mp.plot(dates[4:],uppers,color="red",linewidth=2,label="Upper")
+mp.plot(dates[4:],lowers,color="green",linewidth=2,label="Lower")
+mp.fill_between(dates[4:],lowers,uppers,uppers>lowers,color="dodgerblue",alpha=0.3)
 
 
 mp.legend()
