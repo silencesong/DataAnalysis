@@ -35,6 +35,7 @@ python3+pandas+numpy+matplotlib+pyecharts+jieba+jupyter notebook
    ![](https://github.com/silencesong/DataAnalysis/blob/master/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%A2%86%E5%9F%9F%E6%8B%9B%E8%81%98%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/Images/shanghai1.png)
    
    2. 数据可视化，饼图
+   
    ![](https://github.com/silencesong/DataAnalysis/blob/master/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%A2%86%E5%9F%9F%E6%8B%9B%E8%81%98%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/Images/shanghai2.png)
    
    3. 上海市的人工智能相关职位需求量浦东新区最高，随后是徐汇区、嘉定区、杨浦区、静安区等
@@ -43,6 +44,7 @@ python3+pandas+numpy+matplotlib+pyecharts+jieba+jupyter notebook
    ![](https://github.com/silencesong/DataAnalysis/blob/master/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%A2%86%E5%9F%9F%E6%8B%9B%E8%81%98%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/Images/hangzhou1.png)
    
    2. 数据可视化，饼图
+   
    ![](https://github.com/silencesong/DataAnalysis/blob/master/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%A2%86%E5%9F%9F%E6%8B%9B%E8%81%98%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/Images/hangzhou2.png)
    
    3. 杭州地区的人工智能相关职位需求量余杭区最高，之后分别是滨江区、西湖区、江干区等
@@ -52,12 +54,14 @@ python3+pandas+numpy+matplotlib+pyecharts+jieba+jupyter notebook
 1. 51job网站数据
    1. 读取并整理数据(51job/51job.csv)，共11741个样本，12个特征
    2. 统计并可视化学历要求图
+   
    ![](https://github.com/silencesong/DataAnalysis/blob/master/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%A2%86%E5%9F%9F%E6%8B%9B%E8%81%98%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/Images/edu51job.png)
    
    3. 51job网站的数据中，前四位的是本科，大专，无要求，硕士。
 2. 拉勾网数据
    1. 读取并整理数据(51job/51job.csv)，共4733个样本，13个特征4733,
    2. 统计并可视化学历要求图
+   
    ![](https://github.com/silencesong/DataAnalysis/blob/master/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%A2%86%E5%9F%9F%E6%8B%9B%E8%81%98%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/Images/edu_lagou.png)
    3. 拉勾网站的数据中，学历要求占比排序分别是本科，硕士，大专，学历不限，博士
 3. 根据人工智能行业现状及当前的发展趋势，拉勾网的数据较51job的数据结果更可靠谱
