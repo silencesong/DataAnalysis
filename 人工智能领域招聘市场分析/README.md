@@ -63,7 +63,9 @@ python3+pandas+numpy+matplotlib+pyecharts+jieba+jupyter notebook
    2. 统计并可视化学历要求图
    
    ![](https://github.com/silencesong/DataAnalysis/blob/master/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%A2%86%E5%9F%9F%E6%8B%9B%E8%81%98%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/Images/edu_lagou.png)
+   
    3. 拉勾网站的数据中，学历要求占比排序分别是本科，硕士，大专，学历不限，博士
+   
 3. 根据人工智能行业现状及当前的发展趋势，拉勾网的数据较51job的数据结果更可靠谱
 
 #### 6.人工智能行业相关职位薪资对比
