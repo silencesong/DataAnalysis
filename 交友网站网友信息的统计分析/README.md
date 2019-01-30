@@ -11,13 +11,17 @@
 2. 按地域统计网友数量和网友密度(网友数量/城市常住人口)
    1. 按地域进行分组并计算出网友数量和网友密度
    2. 对网友数量和网友密度进行标准化取值
-   3. 得到TOP20的网友数据和网友密度，并进行可视化
+   3. 得到网友数量TOP20的网友数据，并进行可视化
+   ![](https://github.com/silencesong/DataAnalysis/blob/master/%E4%BA%A4%E5%8F%8B%E7%BD%91%E7%AB%99%E7%BD%91%E5%8F%8B%E4%BF%A1%E6%81%AF%E7%9A%84%E7%BB%9F%E8%AE%A1%E5%88%86%E6%9E%90/images/FriendsNumT20.png)
+   4. 得到网友密度TOP20的网友数据，并进行可视化
+   ![](https://github.com/silencesong/DataAnalysis/blob/master/%E4%BA%A4%E5%8F%8B%E7%BD%91%E7%AB%99%E7%BD%91%E5%8F%8B%E4%BF%A1%E6%81%AF%E7%9A%84%E7%BB%9F%E8%AE%A1%E5%88%86%E6%9E%90/images/FriendDensityT20.png)
 
 3. 按照教育背景统计粉丝数、关注人数
    1. 按照教育背景分组，统计出粉丝数和关注人数，并过滤掉不明确的教育背景的样本
    2. 按照粉丝数进行排序，得到粉丝数TOP20的高校
    3. 计算平均关注人数和平均粉丝数
    4. 对数据进行可视化
+   ![](https://github.com/silencesong/DataAnalysis/blob/master/%E4%BA%A4%E5%8F%8B%E7%BD%91%E7%AB%99%E7%BD%91%E5%8F%8B%E4%BF%A1%E6%81%AF%E7%9A%84%E7%BB%9F%E8%AE%A1%E5%88%86%E6%9E%90/images/fans%26followers.png)
 
 ### 结论
 
