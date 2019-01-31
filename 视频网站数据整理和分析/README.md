@@ -10,18 +10,26 @@
    1. 按照导演这个特征进行分组，计算好评数和评分人数的总和
    2. 计算好频率(好评数/好评人数)
    3. 筛选好评率TOP20的导演，进行可视化
+   ![](https://github.com/silencesong/DataAnalysis/blob/master/%E8%A7%86%E9%A2%91%E7%BD%91%E7%AB%99%E6%95%B0%E6%8D%AE%E6%95%B4%E7%90%86%E5%92%8C%E5%88%86%E6%9E%90/images/top20_director.png)
+   
 3. 统计2000-2016年每年评影人数总量
    1. 筛选出不同年份的数据，去除‘上映年份’字段确实的数据
    2. 根据不同剧名，求出评分人数、好评数总和
    3. 合并数据，得到不同年份，不同剧的评分人数、好评数总和
    4. 按照电影上映年份进行分组，统计出评分人数量和好评数量
    5. 对2000-2016年的数据进行可视化
-
+   ![](https://github.com/silencesong/DataAnalysis/blob/master/%E8%A7%86%E9%A2%91%E7%BD%91%E7%AB%99%E6%95%B0%E6%8D%AE%E6%95%B4%E7%90%86%E5%92%8C%E5%88%86%E6%9E%90/images/Comment_Num.png)
+   
 4. 统计出评分人数TOP20的影视剧并进行可视化
+![](https://github.com/silencesong/DataAnalysis/blob/master/%E8%A7%86%E9%A2%91%E7%BD%91%E7%AB%99%E6%95%B0%E6%8D%AE%E6%95%B4%E7%90%86%E5%92%8C%E5%88%86%E6%9E%90/images/top20_movie.png)
+
 5. 异常值的验证情况
    1. 对2001-2016每年评分人数和好评数进行箱型图可视化（由于2000-2016有17个数据，可视化布局不好看，所以选择了2001-2016进行统计）
+   ![](https://github.com/silencesong/DataAnalysis/blob/master/%E8%A7%86%E9%A2%91%E7%BD%91%E7%AB%99%E6%95%B0%E6%8D%AE%E6%95%B4%E7%90%86%E5%92%8C%E5%88%86%E6%9E%90/images/abnormal.png)
+   
    2. 创建函数，得到每年评分人数的外限最大值最小值
-   3. 统计出每年评分人数异常值(大于外限最大值)情况
+   3. 统计出每年评分人数异常值(大于外限最大值)具体情况及占比
+   ![](https://github.com/silencesong/DataAnalysis/blob/master/%E8%A7%86%E9%A2%91%E7%BD%91%E7%AB%99%E6%95%B0%E6%8D%AE%E6%95%B4%E7%90%86%E5%92%8C%E5%88%86%E6%9E%90/images/ratio.png)
 
 
 ### 结论
