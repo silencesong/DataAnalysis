@@ -83,16 +83,22 @@ python3+numpy+pandas+matplotlib+sklearn+jupyternotebook
    1. 计算苏州不同区域二手房的最低价，均价和最高价
    2. 计算苏州二手房的平均值
    3. 可视化结果
+   ![](https://github.com/silencesong/DataAnalysis/blob/master/%E8%8B%8F%E5%B7%9E%E4%BA%8C%E6%89%8B%E6%88%BF%E5%88%86%E6%9E%90/images/Region%26Unitprice.png)
+   
    4. 从上图中可以发现，苏州工业园区的房价最高，其次是高新区，姑苏区等。其中工业园区和高新区的二手房均价超过了苏州均价，并且工业园区的最高价远高于其他区域的最高价。
 2. 分析工业园区不同地点与房价的关系
    1. 计算苏州工业园区不同地点二手房的最低价，均价和最高价
    2. 计算苏州工业园区二手房的平均值
    3. 可视化结果
+   ![](https://github.com/silencesong/DataAnalysis/blob/master/%E8%8B%8F%E5%B7%9E%E4%BA%8C%E6%89%8B%E6%88%BF%E5%88%86%E6%9E%90/images/DistrictPrice.png)
+   
    4. 从结果中发现，工业园区的玲珑地区房价最高，其次是白糖，湖西CBD，双湖，东沙湖等，胜浦的二手房房价最低。其中有8个地点的二手房均价超过了园区均价，有11个地点的二手房均价超过了苏州二手房均价。
 3. 分析苏州二手房数量与区域的关系
    1. 计算苏州不同区域二手房的数量
    2. 计算不同区域二手房的比例
    3. 可视化结果
+   ![](https://github.com/silencesong/DataAnalysis/blob/master/%E8%8B%8F%E5%B7%9E%E4%BA%8C%E6%89%8B%E6%88%BF%E5%88%86%E6%9E%90/images/Region%26Num.png)
+   
    4. 从可视化结果可以看出，工业园区的二手房数量最多，占比29%，其次是吴中区，姑苏区等。
 
 ### 房价预测
@@ -154,7 +160,11 @@ python3+numpy+pandas+matplotlib+sklearn+jupyternotebook
 
    1. 分别用上面三个模型对训练集进行训练，用测试集进行测试
    2. 得到的得分如下
+   ![](https://github.com/silencesong/DataAnalysis/blob/master/%E8%8B%8F%E5%B7%9E%E4%BA%8C%E6%89%8B%E6%88%BF%E5%88%86%E6%9E%90/images/score.jpg)
+   
    3. 三种集成模型的特征重要性
+   ![](https://github.com/silencesong/DataAnalysis/blob/master/%E8%8B%8F%E5%B7%9E%E4%BA%8C%E6%89%8B%E6%88%BF%E5%88%86%E6%9E%90/images/feature.png)
+   
    4. 房子的大小是影响房子总价的主要特征，其次是地点和区域，符合理论分析
 
 5. 优化模型
