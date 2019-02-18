@@ -212,7 +212,7 @@ C(Avg_discount): 客户在观测窗口内乘坐仓位时所对应的折扣系数
     dtype: int64<img src='data/pie.png'>
     ```
 
-    <img src='data/pie.png'>
+    <img src='data/pie2.png'>
 
     ```
     array([[ 1.16063114, -0.37723101, -0.08693538, -0.09485761, -0.15582812],
@@ -226,9 +226,9 @@ C(Avg_discount): 客户在观测窗口内乘坐仓位时所对应的折扣系数
 
    <img src='data/data3.png'>
 
-4. 根据上述统计对五个客户群进行雷达图绘制
+4. 使用pyecharts对五个客户群进行雷达图绘制
 
-   <img src='data/leida.png'>
+   <img src='data/leida2.png'>
 
 5. 比较各个特征在客户群间的大小，总结出每个群体的优势和弱势特征
 
