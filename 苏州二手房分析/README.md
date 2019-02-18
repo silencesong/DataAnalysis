@@ -97,7 +97,7 @@ python3+numpy+pandas+matplotlib+sklearn+jupyternotebook
    1. 计算苏州不同区域二手房的数量
    2. 计算不同区域二手房的比例
    3. 可视化结果
-   ![](https://github.com/silencesong/DataAnalysis/blob/master/%E8%8B%8F%E5%B7%9E%E4%BA%8C%E6%89%8B%E6%88%BF%E5%88%86%E6%9E%90/images/Region%26Num.png)
+   ![](https://github.com/silencesong/DataAnalysis/blob/master/%E8%8B%8F%E5%B7%9E%E4%BA%8C%E6%89%8B%E6%88%BF%E5%88%86%E6%9E%90/images/Region%26Num2.png)
    
    4. 从可视化结果可以看出，工业园区的二手房数量最多，占比29%，其次是吴中区，姑苏区等。
 
