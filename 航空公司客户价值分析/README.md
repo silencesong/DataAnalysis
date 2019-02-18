@@ -226,7 +226,7 @@ C(Avg_discount): 客户在观测窗口内乘坐仓位时所对应的折扣系数
 
    <img src='data/data3.png'>
 
-4. 根据上述统计对五个客户群进行雷达图绘制
+4. 使用pyecharts统计对五个客户群进行雷达图绘制
 
    <img src='data/leida.png'>
 
