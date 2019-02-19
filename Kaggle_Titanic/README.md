@@ -338,11 +338,21 @@
    model2.fit(X, y)
    ```
 
-   随机森林模型得分：0.8071757660912219
+   AdaBoost模型得分：0.8071757660912219
 
-5. 从上述三种模型的得分可以看出，随机森林分类模型的得分比其他两种模型得分高，其次是逻辑回归模型，最后是AdaBoost分类模型
+5. 建立GBDT分类器
 
-6. 以随机森林模型为例，得到特征重要性分布，并可视化
+   ```python
+   model3=GradientBoostingClassifier(n_estimators = 200,learning_rate=0.1,random_state=10)
+   print(ms.cross_val_score(model3,train_x,train_y,cv=5,scoring='f1_weighted').mean())
+   model3.fit(X, y)
+   ```
+
+   GBDT分类器模型得分：0.8355047319222952
+
+6. 从上述三种模型的得分可以看出，GBDT模型的得分比其他两种模型得分高，其次是随机森林分类, 逻辑回归模型，最后是AdaBoost分类模型
+
+7. 以随机森林模型为例，得到特征重要性分布，并可视化
 
    ```python
    fi=model1.feature_importances_
@@ -406,9 +416,10 @@
     predictions0 = clf.predict(test)
     predictions1 = model1.predict(test)
     predictions2 = model2.predict(test)
+    predictions3 = model3.predict(test)
     
-    #将预测结果保存到csv文件中
-    result = pd.DataFrame({'PassengerId':data_test['PassengerId'].values, 'Survived_L':predictions0.astype(np.int32),'Survived_R':predictions1.astype(np.int32),'Survived_A':predictions2.astype(np.int32)})
+    #保存结果到csv文件
+    result = pd.DataFrame({'PassengerId':data_test['PassengerId'].values, 'Survived_L':predictions0.astype(np.int32),'Survived_R':predictions1.astype(np.int32),'Survived_A':predictions2.astype(np.int32),'Survived_G':predictions3.astype(np.int32)})
     result.to_csv("predictions.csv", index=False)
     ```
 
@@ -418,29 +429,29 @@
    pd.read_csv("predictions.csv").head(20)
    ```
 
-   |      | PassengerId | Survived_A | Survived_L | Survived_R |
-   | ---- | ----------- | ---------- | ---------- | ---------- |
-   | 0    | 892         | 0          | 0          | 0          |
-   | 1    | 893         | 0          | 0          | 0          |
-   | 2    | 894         | 1          | 0          | 0          |
-   | 3    | 895         | 0          | 0          | 0          |
-   | 4    | 896         | 0          | 1          | 0          |
-   | 5    | 897         | 0          | 0          | 0          |
-   | 6    | 898         | 0          | 1          | 1          |
-   | 7    | 899         | 0          | 0          | 0          |
-   | 8    | 900         | 1          | 1          | 1          |
-   | 9    | 901         | 0          | 0          | 0          |
-   | 10   | 902         | 0          | 0          | 0          |
-   | 11   | 903         | 0          | 0          | 0          |
-   | 12   | 904         | 1          | 1          | 1          |
-   | 13   | 905         | 0          | 0          | 0          |
-   | 14   | 906         | 1          | 1          | 1          |
-   | 15   | 907         | 1          | 1          | 1          |
-   | 16   | 908         | 0          | 0          | 0          |
-   | 17   | 909         | 1          | 0          | 0          |
-   | 18   | 910         | 1          | 1          | 0          |
-   | 19   | 911         | 0          | 1          | 1          |
+   |      | PassengerId | Survived_A | Survived_G | Survived_L | Survived_R |
+   | ---- | ----------- | ---------- | ---------- | ---------- | ---------- |
+   | 0    | 892         | 0          | 0          | 0          | 0          |
+   | 1    | 893         | 0          | 0          | 0          | 0          |
+   | 2    | 894         | 1          | 0          | 0          | 0          |
+   | 3    | 895         | 0          | 0          | 0          | 0          |
+   | 4    | 896         | 0          | 0          | 1          | 0          |
+   | 5    | 897         | 0          | 0          | 0          | 0          |
+   | 6    | 898         | 0          | 0          | 1          | 1          |
+   | 7    | 899         | 0          | 0          | 0          | 0          |
+   | 8    | 900         | 1          | 1          | 1          | 1          |
+   | 9    | 901         | 0          | 0          | 0          | 0          |
+   | 10   | 902         | 0          | 0          | 0          | 0          |
+   | 11   | 903         | 0          | 0          | 0          | 0          |
+   | 12   | 904         | 1          | 1          | 1          | 1          |
+   | 13   | 905         | 0          | 0          | 0          | 0          |
+   | 14   | 906         | 1          | 1          | 1          | 1          |
+   | 15   | 907         | 1          | 1          | 1          | 1          |
+   | 16   | 908         | 0          | 0          | 0          | 0          |
+   | 17   | 909         | 1          | 0          | 0          | 0          |
+   | 18   | 910         | 1          | 1          | 1          | 0          |
+   | 19   | 911         | 0          | 0          | 1          | 1          |
 
-   从上述统计可见，'Survived_L'表示逻辑回归的预测结果，'Survived_R'表示随机森林的预测结果，'Survived_A'表示AdaBoost的预测结果，不同的模型，预测的结果存在不同。
+   从上述统计可见，'Survived_L'表示逻辑回归的预测结果，'Survived_R'表示随机森林的预测结果，'Survived_A'表示AdaBoost的预测结果，'Survived_G'表示GBDT的预测结果，不同的模型，预测的结果存在不同。
 
 
