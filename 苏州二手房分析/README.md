@@ -8,7 +8,8 @@ python3+numpy+pandas+matplotlib+sklearn+jupyternotebook
 
 1. 数据来源：链家二手房(https://su.lianjia.com/ershoufang/)
 2. 数据获取时间：2019-01-31
-3. 获取方式：使用requests+xpath进行二级子页面爬虫(苏州二手房_链家.py)，获取链家二手房的相关数据(house.csv)
+3. 获取方式：使用requests+xpath进行二级子页面爬虫(苏州二手房_链家.py)
+4. 保存数据：存入csv文件；存入mysql数据库；存入mongodb数据库
 
 ### 数据处理
 
