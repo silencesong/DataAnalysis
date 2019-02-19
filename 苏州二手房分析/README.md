@@ -1,4 +1,4 @@
-## 基于集成模型(随机森林,AdaBoost, GBRT)的苏州二手房的房价分析与预测
+## 基于集成模型(随机森林,AdaBoost, GBDT)的苏州二手房的房价分析与预测
 
 ### 开发环境及工具
 
@@ -170,6 +170,7 @@ python3+numpy+pandas+matplotlib+sklearn+jupyternotebook
 
    1. 分别用上面三个模型对训练集进行训练，用测试集进行测试
    2. 得到的得分如下
+   
    ![](https://github.com/silencesong/DataAnalysis/blob/master/%E8%8B%8F%E5%B7%9E%E4%BA%8C%E6%89%8B%E6%88%BF%E5%88%86%E6%9E%90/images/score.jpg)
    
    3. 三种集成模型的特征重要性
